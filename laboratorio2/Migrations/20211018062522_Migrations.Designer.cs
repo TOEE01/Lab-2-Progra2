@@ -9,7 +9,7 @@ using laboratorio2.Data;
 namespace laboratorio2.Migrations
 {
     [DbContext(typeof(AplicationDbContext))]
-    [Migration("20211018024121_Migrations")]
+    [Migration("20211018062522_Migrations")]
     partial class Migrations
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

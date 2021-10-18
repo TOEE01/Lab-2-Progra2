@@ -6377,25 +6377,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\recin\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\Ari Soriano\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\recin\\source\\repos\\laboratorio2\\laboratorio2.csproj",
+      "projectUniqueName": "C:\\Users\\Ari Soriano\\Documents\\GitHub\\Lab-2-Progra2\\laboratorio2\\laboratorio2.csproj",
       "projectName": "laboratorio2",
-      "projectPath": "C:\\Users\\recin\\source\\repos\\laboratorio2\\laboratorio2.csproj",
-      "packagesPath": "C:\\Users\\recin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\recin\\source\\repos\\laboratorio2\\obj\\",
+      "projectPath": "C:\\Users\\Ari Soriano\\Documents\\GitHub\\Lab-2-Progra2\\laboratorio2\\laboratorio2.csproj",
+      "packagesPath": "C:\\Users\\Ari Soriano\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Ari Soriano\\Documents\\GitHub\\Lab-2-Progra2\\laboratorio2\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\recin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\Ari Soriano\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -6461,7 +6456,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }
