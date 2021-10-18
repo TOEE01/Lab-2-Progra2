@@ -387,3 +387,4 @@ C:\Users\recin\source\repos\laboratorio2\obj\Debug\net5.0\laboratorio2.pdb
 C:\Users\recin\source\repos\laboratorio2\obj\Debug\net5.0\laboratorio2.genruntimeconfig.cache
 C:\Users\recin\source\repos\laboratorio2\obj\Debug\net5.0\Razor\Views\Home\ListaPersonas.cshtml.g.cs
 C:\Users\recin\source\repos\laboratorio2\obj\Debug\net5.0\Razor\Views\Home\VistaMenorDeEdad.cshtml.g.cs
+C:\Users\recin\source\repos\laboratorio2\bin\Debug\net5.0\libman.json

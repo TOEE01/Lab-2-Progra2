@@ -3,25 +3,37 @@
     ViewData["Title"] = "Home Page";
 }
 
+<body>
+    @using (Html.BeginForm("Registropersona", "Home", FormMethod.Post))
+    {
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+        <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+        <div id="latabla" class="border col-8, text-center">
+            <link href="~/css/BootStrapDiseno.css" rel="stylesheet" />
+            <div>
+                <i class="fas fa-user fa-6x"></i>
+            </div>
+            <br />
+            <br />
+            @Html.LabelFor(e => e.Nombre)
+            <br />
+            @Html.TextBoxFor(e => e.Nombre)
+            @Html.ValidationMessageFor(e => e.Nombre)
+            <br />
+            @Html.LabelFor(e => e.Edad)
+            <br />
+            @Html.TextBoxFor(e => e.Edad)
+            @Html.ValidationMessageFor(e => e.Edad)
+            <br />
+            @Html.LabelFor(e => e.Descripcion)
+            <br />
+            @Html.TextBoxFor(e => e.Descripcion)
+            @Html.ValidationMessageFor(e => e.Descripcion)
+            <br />
+            <br />
+            <button href="#" class="btn-dark" type="submit">Enviar</button>
 
-@using (Html.BeginForm("Registropersona", "Home", FormMethod.Post))
-{
-    <div id="latabla"class="border col-12, text-center">
-        <br />
-        @Html.LabelFor(e => e.Nombre)
-        @Html.TextBoxFor(e => e.Nombre)
-        @Html.ValidationMessageFor(e => e.Nombre)
-        <br />
-        @Html.LabelFor(e => e.Edad)
-        @Html.TextBoxFor(e => e.Edad)
-        @Html.ValidationMessageFor(e => e.Edad)
-        <br />
-        @Html.LabelFor(e => e.Descripcion)
-        @Html.TextBoxFor(e => e.Descripcion)
-        @Html.ValidationMessageFor(e => e.Descripcion)
-        <br />
-        <br />
-        <button type="submit">Enviar</button>
-    </div>
+        </div>
 
-}
+    }
+</body>
