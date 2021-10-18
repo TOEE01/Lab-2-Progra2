@@ -13,16 +13,12 @@ namespace laboratorio2.Dominio
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int IdPersona { get; set; }
 
-        [Display]
-        [Required(ErrorMessage ="Este campo es requerido")]
+        [StringLength(50, ErrorMessage = "El nombre debe tener menos de 50 caracteres")]
         public string NombrePersona { get; set; }
-
-        [Display]
-        [Required(ErrorMessage = "Este campo es requerido")]
+        
         public int EdadPersona { get; set; }
 
-        [Display]
-        [Required(ErrorMessage = "Este campo es requerido")]
+        [StringLength(50, ErrorMessage = "La descricion debe tener menos de 50 caracteres")]
         public string DescripcionPersona { get; set; }
     }
 }

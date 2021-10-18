@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace laboratorio2.Servicios
 {
-    interface IAlmacenPersona
+    public interface IAlmacenPersona
     {
-        void save(AlmacenPersona ap);
+         void save(AlmacenPersona ap);
 
-        List<AlmacenPersona> ListaPersonas();
+         List<AlmacenPersona> ListaPersonas();
     }
 }

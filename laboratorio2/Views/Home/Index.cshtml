@@ -3,28 +3,25 @@
     ViewData["Title"] = "Home Page";
 }
 
-@*<div class="text-center">
-        <h1 class="display-4">Welcome</h1>
-        <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-    </div>*@
 
 @using (Html.BeginForm("Registropersona", "Home", FormMethod.Post))
 {
-<div class="border col-12">
-    <br />
-    @Html.LabelFor(e => e.NombrePersona)
-    @Html.TextBoxFor(e => e.NombrePersona)
-    @Html.ValidationMessageFor(e => e.NombrePersona)
-    <br />
-    @Html.LabelFor(e => e.EdadPersona)
-    @Html.TextBoxFor(e => e.EdadPersona)
-    @Html.ValidationMessageFor(e => e.EdadPersona)
-    <br />
-    @Html.LabelFor(e => e.DescripcionPersona)
-    @Html.TextBoxFor(e => e.DescripcionPersona)
-    @Html.ValidationMessageFor(e => e.DescripcionPersona)
-    <br />
-    <br />
-    <button type="submit">Enviar</button>
-</div>
+    <div id="latabla"class="border col-12, text-center">
+        <br />
+        @Html.LabelFor(e => e.Nombre)
+        @Html.TextBoxFor(e => e.Nombre)
+        @Html.ValidationMessageFor(e => e.Nombre)
+        <br />
+        @Html.LabelFor(e => e.Edad)
+        @Html.TextBoxFor(e => e.Edad)
+        @Html.ValidationMessageFor(e => e.Edad)
+        <br />
+        @Html.LabelFor(e => e.Descripcion)
+        @Html.TextBoxFor(e => e.Descripcion)
+        @Html.ValidationMessageFor(e => e.Descripcion)
+        <br />
+        <br />
+        <button type="submit">Enviar</button>
+    </div>
+
 }

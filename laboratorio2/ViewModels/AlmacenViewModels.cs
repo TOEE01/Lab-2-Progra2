@@ -9,30 +9,38 @@ namespace laboratorio2.ViewModels
 {
     public class AlmacenViewModels
     {
-        [Required(ErrorMessage ="Este campo es obligatorio")]
+        
         public int IdPersona { get; set; }
 
-        [Display]
+        
         [Required(ErrorMessage = "Este campo es obligatorio")]
-        public string NombrePersona { get; set; }
+        [StringLength(50,ErrorMessage ="El nombre debe tener menos de 50 caracteres")]
+        public string Nombre { get; set; }
 
-        [Display]
+        
         [Required(ErrorMessage = "Este campo es obligatorio")]
-        public int EdadPersona { get; set; }
+        [Range(18,80,ErrorMessage ="No Cumple con la edad necesaria")]
+        public int Edad { get; set; }
+        
 
-        [Display]
-        [Required(ErrorMessage = "Este campo es obligatorio")]
-        public string DescripcionPersona { get; set; }
+        
+        [Required(ErrorMessage = "Este campo  es obligatorio")]
+        [StringLength(50, ErrorMessage = "La descricion debe tener menos de 50 caracteres")]
+        public string Descripcion { get; set; }
 
 
         public AlmacenViewModels(AlmacenPersona alp)
         {
             this.IdPersona = alp.IdPersona;
-            this.NombrePersona = alp.NombrePersona;
-            this.EdadPersona = alp.EdadPersona;
-            this.DescripcionPersona = alp.DescripcionPersona;
+            this.Nombre = alp.NombrePersona;
+            this.Edad = alp.EdadPersona;
+            this.Descripcion = alp.DescripcionPersona;
         }
 
+        public AlmacenViewModels()
+        {
 
+        }
     }
+
 }
