@@ -3,47 +3,50 @@
 *@
 @{
 }
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-<div style="text-align:center", name="tablainicio"  >
-    <table style="text-align:center" id="latabla" class="table-striped table-hover,">
-        <thead>
-            <tr>
-                <th>
-                    Id
-                </th>
-                <th>
-                    Nombre
-                </th>
-                <th>
-                    Edad
-                </th>
-                <th>
-                    Descripcion
-                </th>
-            </tr>
-        </thead>
-        <tbody>
-        </tbody>
-    </table>
-</div>
+<body>
+    <div style="text-align:center" class="padre" name="tablainicio">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+        <link href="~/css/bootStrapDiseno2.css" rel="stylesheet" />
+        <table id="latabla" class="table table-striped table-light">
+            <thead>
+                <tr>
+                    <th>
+                        Id
+                    </th>
+                    <th>
+                        Nombre
+                    </th>
+                    <th>
+                        Edad
+                    </th>
+                    <th>
+                        Descripcion
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
 
-@section scripts{
-<script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
-<script>
-    $(document).ready(function () {
-        var tabla = $("#latabla").DataTable({
-            "ajax": {
-                "url": "/Home/GetAll",
-                "type": "get",
-                "databyte": "json"
+    @section scripts{
+        <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                var tabla = $("#latabla").DataTable({
+                    "ajax": {
+                        "url": "/Home/GetAll",
+                        "type": "get",
+                        "databyte": "json"
 
-            }, "columns": [
-                { "data": "idPersona", "name": "idPersona", "autoWidth": true },
-                { "data": "nombrePersona", "name": "nombrePersona", "autoWidth": true },
-                { "data": "edadPersona", "name": "edadPersona", "autoWidth": true },
-                { "data": "descripcionPersona", "name": "descripcionPersona", "autoWidth": true }
-            ]
-        });
-    });
-</script>
- }
+                    }, "columns": [
+                        { "data": "idPersona", "name": "idPersona", "autoWidth": true },
+                        { "data": "nombrePersona", "name": "nombrePersona", "autoWidth": true },
+                        { "data": "edadPersona", "name": "edadPersona", "autoWidth": true },
+                        { "data": "descripcionPersona", "name": "descripcionPersona", "autoWidth": true }
+                    ]
+                });
+            });
+        </script>
+    }
+</body>
